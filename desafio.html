@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desenvolvendo seu futuro</title>
+  <style>
+    
+    *{ margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      
+    }
+
+    body{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background-color: #0f172a;
+    
+    }
+    .container{
+       width: 100%;
+       margin: 0 auto;
+       padding: 20px;
+       color: aliceblue;
+       
+      }
+
+    .logo{
+        text-shadow: 2px 2px 5px black;
+        text-align: center;
+       
+        background-color: #111;
+        color: white;
+    }
+    header{
+      background-color: #111;
+      color: white;
+      position: sticky;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    
+    }
+ 
+    .menu{
+      display: flex;
+       list-style: none;
+       gap: 10px;
+       justify-content: center;
+    }
+    .card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+    .menu a{
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .menu a:hover{
+      color: royalblue;
+    }
+    
+    .card{
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      gap: 20px;
+      padding: 15px;
+      transition: 0.3s;
+      color: aliceblue;
+    }
+
+    .card:hover{
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgb(0, 0, 0);
+    }
+
+    @media (max-width: 768px){
+      .menu{
+        flex-direction: column;
+        gap: 10px;
+      }
+      .card{
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1{
+        font-size: 24px;
+      }
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+    }
+    
+
+    
+
+    .hero{
+      height: 70vh;
+     background: url(code\ GIF.gif) no-repeat center/cover;
+      color: white;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+    }
+    
+    .hero button{
+      margin-top: 20px;
+      padding: 12px 30px;
+      border: none;
+      background: white;
+      color: black;
+      cursor: pointer;
+      border-radius: 8px;
+
+      transition: 0.3s;
+    }
+
+    /* hover botão*/
+    .hero button:hover{
+      transform: scale(1.05);
+      background: royalblue;
+    }
+
+    footer{
+      margin-bottom: 20px;
+      padding: 12px 30px;
+      color: aliceblue;
+    }
+
+    .blue{
+      color: royalblue;
+    }
+    h1{
+      color: white;
+      font-size: 40px;
+    }
+    .black{
+      color: white;
+    }
+       
+      
+ 
+  </style>
+  
+  <head>
+  </head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <h1 class="logo">Desenvolvendo o seu <span class="blue">FUTURO</span></h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+         
+          <li><a href="contato.html" target="_blank">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Não perca tempo<br>Construa seu futuro na web agora!</h2>
+      <p>Aprenda <span class="blue">HTML</span> e <span class="black">CSS</span> e se torne um desenvolvedor COMPLETO.</p>
+     <a href="cursostyl2.html" target="_blank">
+      <button>Começar agora</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- CARDS -->
+  <section class="cards">
+    <div class="container grid">
+
+      <div class="card">
+        <h3>HTML</h3>
+        <p>Estruture suas páginas com semântica.</p>
+      
+       <a href="Html.html" target="_blank">
+       
+
+       </a> 
+
+       </a> 
+      </div>
+
+      <div class="card">
+        <h3>CSS</h3>
+        <p>Estilize com Flexbox, Grid e responsividade.</p>
+       <a href="css.html" target="_blank">
+        
+
+       </a> 
+      </div>
+
+      <div class="card">
+        <h3>JavaScript</h3>
+        <p>Dê vida ao seu site com interatividade.</p>
+        <a href="javascript.html" target="_blank">
+         
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre">
+    <div class="container">
+      <h2>Sobre nós</h2>
+      <p>Somos uma equipe focada em ensinar desenvolvimento web do zero ao profissional.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Certificado Uninter.</p>
+    <p>© 2026 - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
